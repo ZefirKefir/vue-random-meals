@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --variable: rgba(161, 71, 179, .5);
+}
+
+@layer base {
+  input[type='text']:focus {
+    border-color: var(--variable);
+    box-shadow: 0 0 0 1px var(--variable);
+  }
+}
